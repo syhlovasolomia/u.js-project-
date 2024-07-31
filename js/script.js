@@ -54,7 +54,7 @@ const personalMovieDataBase = {
       writeYourGenres: function () {
             for (let i = 1; i < 2; i++) {
 
-                  let genres = prompt(`Enter your favorite genres separated by commas`);
+                  let genres = prompt(`Enter your favorite genres separated by commas`).toLowerCase();
 
                   if (genres == '' || genres == null) {
                         console.log('You typed wrong data or did not type anything at all.');
